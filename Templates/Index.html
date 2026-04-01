@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Graph Web App</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <h1>Interactive Graphs</h1>
+
+  <label for="chartType">Choose Graph Type:</label>
+  <select id="chartType">
+    <option value="line">Line</option>
+    <option value="bar">Bar</option>
+    <option value="pie">Pie</option>
+  </select>
+
+  <canvas id="myChart"></canvas>
+
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
